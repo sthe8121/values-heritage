@@ -1,102 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GMIS Values Gallery Walk</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMIS Values & Heritage Gallery Walk</title>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Hide horizontal scrollbar but keep scrolling -->
   <style>
     #gallery::-webkit-scrollbar { display: none; }
     #gallery { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
+
 <body class="h-screen w-screen overflow-hidden bg-white text-gray-800">
 
+<!-- ── Full‑screen Carousel ───────────────────────────────────────── -->
 <section id="values" class="relative h-screen w-screen bg-white overflow-hidden">
-  <h3 class="absolute top-4 left-1/2 -translate-x-1/2 z-20 text-xl md:text-2xl font-bold text-gmis-navy">
-    Our Values & Heritage
-  </h3>
 
-  <div id="gallery" class="flex h-full pt-16 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory">
+  <!-- Sticky heading -->
+  <h1 class="absolute top-4 left-1/2 -translate-x-1/2 z-20
+             text-xl md:text-2xl font-bold text-gray-800">
+    Our Values &amp; Heritage
+  </h1>
 
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="safeguarding.png" alt="Safeguarding" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Safeguarding</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="nurturingcuriosity.png" alt="Nurturing Curiosity" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Nurturing Curiosity</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="cultivatingcreativity.png" alt="Cultivating Creativity" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Cultivating Creativity</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="fosteringcare.png" alt="Fostering Care" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Fostering Care</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="teamwork.png" alt="Teamwork" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Teamwork</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="sukarnonehru.png" alt="Sukarno &amp; Nehru" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Sukarno &amp; Nehru</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="tagore.png" alt="Rabindranath Tagore" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Rabindranath Tagore</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="cursive.png" alt="Cursive Writing" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Cursive Writing</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="celebratingdiversity.png" alt="Celebrating Diversity" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Celebrating Diversity</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="fatherson.png" alt="Father &amp; Son" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Father &amp; Son</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="gandhihappines.png" alt="Gandhi Happiness" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Gandhi Happiness</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="wisdom.png" alt="Wisdom" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Wisdom</figcaption>
-</figure>
-<figure class="relative flex-shrink-0 w-screen h-full snap-start">
-  <img src="learntogether.png" alt="Learn Together" loading="lazy" class="w-full h-full object-cover"/>
-  <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur px-4 py-1 rounded-full text-sm font-semibold">Learn Together</figcaption>
-</figure>
+  <!-- Scrollable row -->
+  <div id="gallery"
+       class="flex h-full pt-16 overflow-x-auto overflow-y-hidden scroll-smooth
+              snap-x snap-mandatory">
+
+    <!-- One <figure> per image (13 total)  -->
+    <!-- 1 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="safeguarding.png" alt="Safeguarding"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption
+        class="absolute bottom-4 left-1/2 -translate-x-1/2
+               bg-white/70 backdrop-blur px-4 py-1 rounded-full
+               text-sm font-semibold">
+        Safeguarding
+      </figcaption>
+    </figure>
+
+    <!-- 2 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="nurturingcuriosity.png" alt="Nurturing Curiosity"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Nurturing Curiosity
+      </figcaption>
+    </figure>
+
+    <!-- 3 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="cultivatingcreativity.png" alt="Cultivating Creativity"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Cultivating Creativity
+      </figcaption>
+    </figure>
+
+    <!-- 4 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="fosteringcare.png" alt="Fostering Care"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Fostering Care
+      </figcaption>
+    </figure>
+
+    <!-- 5 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="teamwork.png" alt="Teamwork"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Teamwork
+      </figcaption>
+    </figure>
+
+    <!-- 6 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="sukarnonehru.png" alt="Sukarno and Nehru"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Sukarno &amp; Nehru
+      </figcaption>
+    </figure>
+
+    <!-- 7 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="tagore.png" alt="Rabindranath Tagore"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Rabindranath Tagore
+      </figcaption>
+    </figure>
+
+    <!-- 8 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="cursive.png" alt="Cursive Writing"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Cursive Writing
+      </figcaption>
+    </figure>
+
+    <!-- 9 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="celebratingdiversity.png" alt="Celebrating Diversity"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Celebrating Diversity
+      </figcaption>
+    </figure>
+
+    <!-- 10 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="fatherson.png" alt="Father and Son"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Father &amp; Son
+      </figcaption>
+    </figure>
+
+    <!-- 11 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="gandhihappines.png" alt="Gandhi Happiness"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Gandhi Happiness
+      </figcaption>
+    </figure>
+
+    <!-- 12 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="wisdom.png" alt="Wisdom"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Wisdom
+      </figcaption>
+    </figure>
+
+    <!-- 13 -->
+    <figure class="relative flex-shrink-0 w-screen h-full snap-start
+                   flex items-center justify-center bg-black">
+      <img src="learntogether.png" alt="Learn Together"
+           class="max-w-full max-h-full object-contain object-center" />
+      <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2
+                         bg-white/70 backdrop-blur px-4 py-1 rounded-full
+                         text-sm font-semibold">
+        Learn Together
+      </figcaption>
+    </figure>
+
   </div>
 
-  <button id="prevBtn" class="hidden md:flex items-center justify-center absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-white/70 backdrop-blur rounded-full h-12 w-12 shadow">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-    </svg>
-  </button>
-  <button id="nextBtn" class="hidden md:flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-white/70 backdrop-blur rounded-full h-12 w-12 shadow">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+  <!-- Arrow buttons -->
+  <button id="prevBtn"
+    class="hidden md:flex items-center justify-center absolute
+           left-3 top-1/2 -translate-y-1/2 z-20
+           bg-white/70 backdrop-blur rounded-full h-12 w-12 shadow">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M15 19l-7-7 7-7" />
     </svg>
   </button>
 
-  <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+  <button id="nextBtn"
+    class="hidden md:flex items-center justify-center absolute
+           right-3 top-1/2 -translate-y-1/2 z-20
+           bg-white/70 backdrop-blur rounded-full h-12 w-12 shadow">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+
+  <!-- Dot indicators -->
+  <div id="dots"
+       class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20
+              flex gap-2"></div>
+
 </section>
 
+<!-- ── Carousel logic (auto‑advance + dots) ──────────────────────── -->
 <script>
 (() => {
   const gallery = document.getElementById('gallery');
   const panels  = Array.from(gallery.children);
   const dotsBox = document.getElementById('dots');
 
+  /* Build dot buttons */
   const dots = panels.map((_, i) => {
     const b = document.createElement('button');
     b.className = 'h-2.5 w-2.5 rounded-full bg-gray-400 transition-opacity';
-    b.onclick = () => goto(i);
+    b.onclick   = () => goto(i);
     dotsBox.appendChild(b);
     return b;
   });
@@ -116,24 +252,30 @@
 
   const restartTimer = () => {
     clearInterval(timer);
-    timer = setInterval(() => goto((index + 1) % panels.length), 8000);
+    timer = setInterval(() =>
+      goto((index + 1) % panels.length), 8000);     // 8‑second auto‑advance
   };
 
+  /* Arrow buttons */
   document.getElementById('prevBtn').onclick = () =>
     goto((index - 1 + panels.length) % panels.length);
   document.getElementById('nextBtn').onclick = () =>
     goto((index + 1) % panels.length);
 
+  /* Detect manual swipe / snap change */
   const snapWatcher = () => {
     const i = Math.round(gallery.scrollLeft / scrollAmt());
     if (i !== index) { setActive(i); restartTimer(); }
   };
-  gallery.addEventListener('scroll', () => requestAnimationFrame(snapWatcher));
+  gallery.addEventListener('scroll',
+    () => requestAnimationFrame(snapWatcher));
 
+  /* Initialise */
   dots.forEach(d => d.style.opacity = '0.4');
   setActive(0);
   restartTimer();
 })();
 </script>
+
 </body>
 </html>
